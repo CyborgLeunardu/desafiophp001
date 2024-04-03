@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Desafio 01</title>
+    <title>Desafio PHP 01</title>
 </head>
 
 <body>
     <main>
         <h1>Resultado Final</h1>
-        <?php $numero = $_GET["numero"];
-        $antecessor = $_GET["numero"] - 1;
-        $sucessor = $_GET["numero"] + 1;
+        <?php
+        $numero = $_GET["numero"];
+        $antecessor = $numero - 1;
+        $sucessor = $numero + 1;
         echo "<p>O número escolhido foi <b>$numero</b> </p>";
         echo "<p>O seu <i>antecessor</i> é $antecessor</p>";
         echo "<p>O seu <i>sucessor</i> é $sucessor</p>";
